@@ -190,4 +190,36 @@ nav {
 nav a {
     text-decoration: none;
     font-size: bold;
+    margin-right: 80px;
+}
+.menu_acciones {
+    list-style: none;
+    position: relative;
+    
+}
+.menu_acciones > li > a {
+    color:rgb(236, 224, 224);
+}
+.menu_desplegable {
+    position: absolute;
+    right: 10px;
+    list-style: none;
+    position: absolute;
+    display: none;
+    width: 200px;
+    background-color:rgb(252, 30, 30, .8) ;
+}
+.menu_desplegable > li > a {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    color: rgb(236, 224, 224);
+    text-decoration: none;
+}
+
+.menu_acciones li:hover .menu_desplegable {
+    display: block;
+}
+.menu_desplegable li:hover {
+    background-color: rgb(17, 17, 17, 0.5);;
 }
