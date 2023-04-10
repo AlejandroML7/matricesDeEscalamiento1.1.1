@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos.css">
+    <title>Administrar</title>
+</head>
+<body>
+    <nav>
+        <h2>Nombre Empresa</h2>
+        <ul class="menu_acciones">
+            <li>
+                <a href="#">Aciones</a>
+                <ul class="menu_desplegable">
+                    <li><a href="#">Agregar Nueva Matriz</a></li>
+                    <li><a href="#">Eliminar Matriz</a></li>
+                    <li><a href="#">Editar Matriz</a></li>
+                    <li><a href="./index.html">Salir</a></li>
+                </ul>
+            </li>
+        </ul>
+        
+    </nav>
+    <main class="contenedor_tablas">
+        <div class="matriz">
+            <h2>Matriz 1</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Numero de contacto</th>
+                        <th>Cargo</th>
+                        <th>Disponible</th>
+                        <th>Turno</th>
+                        <th>acciones</th>
+                    </tr> 
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rodrigo Puentes</td>
+                        <td>3508886454</td>
+                        <td>gerente</td>
+                        <td>si</td>
+                        <td>diurno</td>
+                        <td>
+                            <button class="btnTable">edit</button>
+                            <button class="btnTable">borrar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ángela-Díaz</td>
+                        <td>3128954587</td>
+                        <td>subgerente</td>
+                        <td>no</td>
+                        <td>nocturno</td>
+                        <td>
+                            <button class="btnTable">edit</button>
+                            <button class="btnTable">borrar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="matriz">
+            <h2>Matriz 2</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Numero de contacto</th>
+                        <th>Cargo</th>
+                        <th>Disponible</th>
+                        <th>Turno</th>
+                        <th>acciones</th>
+                    </tr> 
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ricardo Calderon</td>
+                        <td>3509876758</td>
+                        <td>Contador</td>
+                        <td>no</td>
+                        <td>diurno</td>
+                        <td>
+                            <button class="btnTable">edit</button>
+                            <button class="btnTable">borrar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Camilo Cifuentes</td>
+                        <td>3214566776</td>
+                        <td>Asistente contador</td>
+                        <td>si</td>
+                        <td>nocturno</td>
+                        <td>
+                            <button class="btnTable">edit</button>
+                            <button class="btnTable">borrar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        
+    </main>
+    <button id="export-btn">Exportar a PDF</button>
+</body> 
+</html>
