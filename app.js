@@ -22,9 +22,12 @@ console.log(accion);
 ingresarBtn.addEventListener("click", function(event) {
     event.preventDefault();
 
-    if (accion.value == "administrar") {
-        console.log("El botón de enviar fue presionado");
+    if (accion.value == "consultor") {
+        
+        alert("entrar como consultor");
+    } if(accion.value == "administrar"){
+        alert("entrar como administrador");
     }
-    
-    // Aquí puedes agregar tu código para procesar el formulario
+
+   
   });
