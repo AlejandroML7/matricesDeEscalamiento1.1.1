@@ -1,5 +1,7 @@
-console.log(empresas);
-selectEmpresa =  document.querySelector('#empresa');
+
+const selectEmpresa =  document.querySelector('#empresa');
+const accion = document.getElementById("accion");
+const ingresarBtn = document.getElementById("ingresar");
 
 llenarSelect(empresas);
 
@@ -15,3 +17,14 @@ function llenarSelect(arr) {
 }
 
 console.log(selectEmpresa);
+console.log(accion);
+
+ingresarBtn.addEventListener("click", function(event) {
+    event.preventDefault();
+
+    if (accion.value == "administrar") {
+        console.log("El botón de enviar fue presionado");
+    }
+    
+    // Aquí puedes agregar tu código para procesar el formulario
+  });
