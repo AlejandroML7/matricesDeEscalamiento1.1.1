@@ -11,13 +11,14 @@
     <title>form</title>
 </head>
 <body>
-    <div class="contenedor_formulario"><form action="" method="post" id="form">
+<div class="contenedor_formulario">
+    <form action=""  id="form">
         <div class="form">
             <h1>LOG IN</h1>
             <div class="grupo">
                 <label for="">Acción</label>
-                <select name="accion" id="accion">
-                    <option value=""></option>
+                <select name="accion" id="accion" required>
+                    <option value="">--Selecciona--</option>
                     <option value="administrar">Administrador</option>
                     <option value="consultor">Consultor</option>
                 </select>
@@ -25,8 +26,8 @@
             </div>
             <div class="grupo">
                 <label for="">Empresa</label>
-                <select name="accion" id="empresa">
-                    <option value=""></option>
+                <select name="accion" id="empresa" required>
+                    <option value="">--Selecciona--</option>
                     
                 </select>
                 
@@ -42,7 +43,8 @@
             <button  id="ingresar">Ingresar</button>
             
         </div>
-    </form></div>
+    </form>
+</div>
     
     <script src="./db.js"></script>
     <script src="./app.js"></script>

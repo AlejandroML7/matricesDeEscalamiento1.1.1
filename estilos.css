@@ -61,6 +61,8 @@ select {
     -o-border-radius: 10px;
     background: white;
     color: black;
+    font-family:'DM Sans', sans-serif ;
+    font-weight: 400;
     font-size: 18px;
     padding: 10px 10px 10px 5px;
     display: block;
@@ -139,7 +141,8 @@ button:hover {
 .matriz {
     margin: 30px auto;
     height: auto;
-    border: 1px solid rgb(32, 31, 31)
+    border: 1px solid rgb(32, 31, 31);
+    border-radius: 8px;
 }
 .matriz h2 {
     display: flex;
@@ -187,10 +190,11 @@ nav {
 } nav h2 {
     color:rgb(236, 224, 224);
 }
-nav a {
-    text-decoration: none;
-    font-size: bold;
+nav .material-icons {
+    color:rgb(236, 224, 224);
+    font-size: 40px;
     margin-right: 80px;
+    width: 40px;
 }
 .menu_acciones {
     list-style: none;

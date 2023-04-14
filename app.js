@@ -2,8 +2,11 @@
 const selectEmpresa =  document.querySelector('#empresa');
 const accion = document.getElementById("accion");
 const ingresarBtn = document.getElementById("ingresar");
+const form = document.querySelector('#form');
+
 
 llenarSelect(empresas);
+
 
 function llenarSelect(arr) {
     arr.forEach(empresa => {
@@ -20,14 +23,16 @@ console.log(selectEmpresa);
 console.log(accion);
 console.log(ingresarBtn);
 
-ingresarBtn.addEventListener("click", function(event) {
+
+form.addEventListener("submit", function(event) {
     event.preventDefault();
 
     if (accion.value == "consultor") {
         window.location.href = "./panelConsultor.html";
-    } if(accion.value == "administrar"){
+        return;
+    } 
+    if(accion.value == "administrar"){
         window.location.href = "./panelAmin.html";
+        return;
     }
-
-   
   });

@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./estilos.css">
     <title>Administrar</title>
 </head>
 <body>
     <nav>
-        <h2>Nombre Empresa</h2>
+        <h2 id="titulo" >Nombre Empresa</h2>
         <ul class="menu_acciones">
             <li>
-                <a href="#">Aciones</a>
+                <i class="material-icons">menu</i>
                 <ul class="menu_desplegable">
                     <li><a href="#">Agregar Nueva Matriz</a></li>
                     <li><a href="#">Eliminar Matriz</a></li>
@@ -106,5 +107,6 @@
         
     </main>
     <button id="export-btn">Exportar a PDF</button>
+    <script src="./db.js"></script>
 </body> 
 </html>
