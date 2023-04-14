@@ -18,15 +18,15 @@ function llenarSelect(arr) {
 
 console.log(selectEmpresa);
 console.log(accion);
+console.log(ingresarBtn);
 
 ingresarBtn.addEventListener("click", function(event) {
     event.preventDefault();
 
     if (accion.value == "consultor") {
-        
-        alert("entrar como consultor");
+        window.location.href = "./panelConsultor.html";
     } if(accion.value == "administrar"){
-        alert("entrar como administrador");
+        window.location.href = "./panelAmin.html";
     }
 
    
