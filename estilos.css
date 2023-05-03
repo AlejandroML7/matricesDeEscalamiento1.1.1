@@ -150,6 +150,9 @@ button:hover {
 .matriz {
     margin: 30px auto;
     height: auto;
+    -webkit-box-shadow: -4px 4px 10px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: -4px 4px 10px -1px rgba(0,0,0,0.75);
+box-shadow: -4px 4px 10px -1px rgba(0,0,0,0.75);
     
 }
 .matriz h2 {
