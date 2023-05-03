@@ -1,3 +1,16 @@
+:root {
+    --fondo: #fff;
+    --color-primario: #f0f0f0;
+    --color-primario-hover:#e7dcdc;
+    --letra: #000;
+    --boton: #909090;
+    --boton-hover:#707070;
+    --color-secundario:#A0A0A0;
+    --color-borde:#333333;
+}
+
+
+
 *,
 ::before,
 ::after {
@@ -11,8 +24,8 @@ body {
     font-family: 'Inter', sans-serif;
     font-family: 'Roboto', sans-serif;
     font-family: 'Rubik', sans-serif;
-    background: rgb(245,241,243);
-    background: radial-gradient(circle, rgba(245,241,243,1) 0%, rgba(235,211,211,1) 100%);
+    background: var(--fondo);
+    
     
 }
 .contenedor_formulario {
@@ -25,21 +38,16 @@ body {
 h1 {
     text-align: center;
     font-weight: 700;
-    color:rgb(236, 224, 224);
+    color: var(--letra);
 }
 form {
     margin: 40px;
-    width: 500px;
-    background-color:#ff1900;
-    padding: 40px 20px;
-    -webkit-box-shadow: -5px 6px 21px 0px rgba(230,87,116,1);
-    -moz-box-shadow: -5px 6px 21px 0px rgba(230,87,116,1);
-    box-shadow: -5px 6px 21px 0px rgba(230,87,116,1);
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
+    width: 450px;
+    background-color:var(--color-primario);
+    padding: 30px 10px;
+    -webkit-box-shadow: -4px 4px 10px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -4px 4px 10px -1px rgba(0,0,0,0.75);
+    box-shadow: -4px 4px 10px -1px rgba(0,0,0,0.75);
 }
 .form {
     width: 100%;
@@ -89,7 +97,7 @@ input:focus{
     color:rgb(26, 24, 24)
 } 
 label {
-    color: rgb(236, 224, 224);
+    color: var(--letra);
     pointer-events: none;
 }
 .barra {
@@ -116,6 +124,7 @@ input:focus~.barra::before {
 }
 button {
     font-family: 'Roboto';
+    background-color: var(--boton);
     border: none;
     display: block;
     width: 40%;
@@ -127,9 +136,9 @@ button {
     color: black;
 }
 button:hover {
-    
+    background-color: var(--boton-hover);
     font-weight: bold;
-    color: rgb(243, 13, 13);
+    color: var(--color-primario);
 }
 .contenedor_tablas {
     margin: 0 auto;
@@ -141,57 +150,69 @@ button:hover {
 .matriz {
     margin: 30px auto;
     height: auto;
-    border: 1px solid rgb(32, 31, 31);
-    border-radius: 8px;
+    
 }
 .matriz h2 {
     display: flex;
     justify-content: center;
-    background:#ff1900; 
-    color:rgb(236, 224, 224);
-    padding: 10px;
+    background: var(--color-primario); 
+    border-left: 0.5px solid var(--letra);
+    border-top: 0.5px solid var(--letra);
+    border-right: 0.5px solid var(--letra);
+    color:var(--letra);
+    padding: 5px;
 }
 table {
-    font-size: 16px;
+    font-size: 12px;
     table-layout: fixed;
     border-collapse: collapse;
+    
 }
 thead {
-    background:#ff1900; 
-    border: 1px solid rgb(32, 31, 31);
+    background:var(--color-primario); 
+    border: 0.5px solid var(--color-borde);
 }
 th {
-    color:rgb(236, 224, 224);
-    padding: 20px 15px;
+    color:var(--letra);
+    padding: 8px;
     font-weight: bold;
     text-transform: uppercase;
-    border: 1px solid rgb(32, 31, 31);
+    border-left: 0.5px solid var(--color-borde);
+    border-right: 0.5px solid var(--color-borde);
+    border-bottom: 0.5px solid var(--color-borde);;
 }
 td {
-    padding: 15px;
-    border: 1px solid rgb(32, 31, 31);
+    padding: 8px;
+    text-align: center;
+    border-left: 0.5px solid var(--color-borde);
+    border-right: 0.5px solid var(--color-borde);
+    border-bottom: 0.5px solid var(--color-borde);
 }
 tbody tr:hover {
-    background: rgb(240, 65, 65, 0.5);;
+    background: var(--color-primario-hover);
 }
 .btnTable {
-    
-    background-color: rgba(84, 85, 85, 0.699);
-    width: 70px;
+    margin: 4px;
+    background-color: var(--boton);
+    width: 3rem;
     height: auto;
     border-radius: 10px;
+    font-size: small;
 }
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background:#ff1900; 
-    padding: 15px;
-} nav h2 {
-    color:rgb(236, 224, 224);
+    background: var(--color-primario); 
+    border-bottom: 1px solid var(--color-borde);
+    padding: 8px;
+    margin-bottom: 40px;
+} 
+nav h2 {
+    color:var(--letra);
 }
 nav .material-icons {
-    color:rgb(236, 224, 224);
+    color:var(--letra);
     font-size: 40px;
     margin-right: 80px;
     width: 40px;
@@ -202,7 +223,7 @@ nav .material-icons {
     
 }
 .menu_acciones > li > a {
-    color:rgb(236, 224, 224);
+    color: var(--letra);
 }
 .menu_desplegable {
     position: absolute;
@@ -211,13 +232,13 @@ nav .material-icons {
     position: absolute;
     display: none;
     width: 200px;
-    background-color:rgb(252, 30, 30, .8) ;
+    background-color:var(--color-secundario) ;
 }
 .menu_desplegable > li > a {
     display: block;
     width: 100%;
     padding: 15px 20px;
-    color: rgb(236, 224, 224);
+    color: var(--letra);
     text-decoration: none;
 }
 
