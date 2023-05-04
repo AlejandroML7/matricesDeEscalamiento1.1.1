@@ -249,7 +249,11 @@ nav .material-icons {
     display: block;
 }
 .menu_desplegable li:hover {
-    background-color: rgb(17, 17, 17, 0.5);;
+    background-color: rgb(17, 17, 17, 0.5);
+    
+}
+.menu_desplegable li a:hover {
+    color: var(--fondo);
 }
 #export-btn {
     display: flex;
@@ -277,3 +281,16 @@ nav .material-icons {
   #export-btn:active {
     background-color: #005cbf;
   }
+
+
+ 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+  margin-right:20px ;
+  color: var(--letra);
+  
+}
