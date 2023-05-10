@@ -141,29 +141,85 @@ button:hover {
     color: var(--color-primario);
 }
 .contenedor_tablas {
-    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+} 
+#contenedor_tipos-matriz{
+    width: 20%;
+    height: 40vh;
+    margin-top: 60px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    background-color: var(--color-primario);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: -8px 12px 17px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -8px 12px 17px 1px rgba(0,0,0,0.75);
+    box-shadow: -8px 12px 17px 1px rgba(0,0,0,0.75);
+    
+}
+#contenedor_tipos-matriz h2 {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--boton);
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#contenedor_tipos-matriz ul {
+    list-style: none;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+#contenedor_tipos-matriz ul li {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+#contenedor_tipos-matriz ul li:hover {
+    background-color: var(--color-secundario);
+}
+
+#contenedor_matriz {
+    width: 80%;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-} 
+}
+
 .matriz {
     margin: 30px auto;
     height: auto;
     -webkit-box-shadow: -4px 4px 10px -1px rgba(0,0,0,0.75);
--moz-box-shadow: -4px 4px 10px -1px rgba(0,0,0,0.75);
-box-shadow: -4px 4px 10px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -4px 4px 10px -1px rgba(0,0,0,0.75);
+    box-shadow: -4px 4px 10px -1px rgba(0,0,0,0.75);
     
 }
-.matriz h2 {
-    display: flex;
-    justify-content: center;
+.matriz caption {
     background: var(--color-primario); 
     border-left: 0.5px solid var(--letra);
     border-top: 0.5px solid var(--letra);
     border-right: 0.5px solid var(--letra);
     color:var(--letra);
     padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
 }
 table {
     font-size: 12px;
@@ -209,7 +265,7 @@ nav {
     background: var(--color-primario); 
     border-bottom: 1px solid var(--color-borde);
     padding: 8px;
-    margin-bottom: 40px;
+    
 } 
 nav h2 {
     color:var(--letra);
@@ -293,4 +349,8 @@ nav .material-icons {
   margin-right:20px ;
   color: var(--letra);
   
+}
+
+.oculto {
+    display: none;
 }

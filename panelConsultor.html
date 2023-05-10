@@ -15,70 +15,80 @@
             logout
             </span></a>
     </nav>
-    <main class="contenedor_tablas">
-        <div class="matriz">
-            <h2>Matriz 1</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Nombre</th>
-                        <th>Numero de contacto</th>
-                        <th>Cargo</th>
-                        <th>Disponible</th>
-                        <th>Turno</th>
-                    </tr> 
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Rodrigo Puentes</td>
-                        <td>3508886454</td>
-                        <td>gerente</td>
-                        <td>si</td>
-                        <td>diurno</td>
-                    </tr>
-                    <tr>
-                        <td>Ángela-Díaz</td>
-                        <td>3128954587</td>
-                        <td>subgerente</td>
-                        <td>no</td>
-                        <td>nocturno</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="matriz">
-            <h2>Matriz 2</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Nombre</th>
-                        <th>Numero de contacto</th>
-                        <th>Cargo</th>
-                        <th>Disponible</th>
-                        <th>Turno</th>
-                    </tr> 
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Ricardo Calderon</td>
-                        <td>3509876758</td>
-                        <td>Contador</td>
-                        <td>no</td>
-                        <td>diurno</td>
-                    </tr>
-                    <tr>
-                        <td>Camilo Cifuentes</td>
-                        <td>3214566776</td>
-                        <td>Asistente contador</td>
-                        <td>si</td>
-                        <td>nocturno</td>
 
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        
-        
+    
+    <main class="contenedor_tablas">
+
+        <section id="contenedor_tipos-matriz">
+            <h2>Tipos de Matriz</h2>
+           <ul>
+                <li id="t-diurno">Turno Diurno</li>
+                <li id="t-nocturno">Turno Nocturno</li>
+           </ul>
+        </section>
+        <section id="contenedor_matriz">
+            <div class="matriz" id="diurno">
+                <table>
+                    <caption>Matriz turno: nocturno</caption>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Numero de contacto</th>
+                            <th>Cargo</th>
+                            <th>Disponible</th>
+                            <th>Turno</th>
+                        </tr> 
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Rodrigo Puentes</td>
+                             <td>3508886454</td>
+                            <td>gerente</td>
+                            <td>si</td>
+                            <td>diurno</td>
+                        </tr>
+                        <tr>
+                            <td>Ángela-Díaz</td>
+                            <td>3128954587</td>
+                            <td>subgerente</td>
+                            <td>no</td>
+                            <td>nocturno</td>
+                        </tr>
+                    </tbody>
+                </table>                
+            </div>
+            <div class="matriz oculto" id="nocturno">
+                
+                <table>
+                    <caption>Matriz turno: nocturno</caption>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Numero de contacto</th>
+                            <th>Cargo</th>
+                            <th>Disponible</th>
+                            <th>Turno</th>
+                        </tr> 
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ricardo Calderon</td>
+                            <td>3509876758</td>
+                            <td>Contador</td>
+                            <td>no</td>
+                            <td>diurno</td>
+                        </tr>
+                        <tr>
+                            <td>Camilo Cifuentes</td>
+                            <td>3214566776</td>
+                            <td>Asistente contador</td>
+                            <td>si</td>
+                            <td>nocturno</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>  
     </main>
     <script src="./app.js"></script>
 </body> 
