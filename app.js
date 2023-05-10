@@ -5,7 +5,28 @@ const email = document.querySelector('#email');
 const password = document.querySelector('#password');
 const ingresarBtn = document.getElementById("ingresar");
 const form = document.querySelector('#form');
-const titulo = document.querySelector('#titulo');
+
+
+llenarSelect(empresas);
+
+
+
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    if (accion.value == "consultor") {
+        window.location.href = "./panelConsultor.html";
+        console.log(datosIngreso);
+        return;
+        
+    } 
+    if(accion.value == "administrar"){
+        window.location.href = "./panelAmin.html";
+        return;
+    }
+  });
+  
+
 
 selectEmpresa.addEventListener('change', (e) => {
     e.preventDefault();
@@ -41,7 +62,7 @@ const datosIngreso = {
 }
 
 
-llenarSelect(empresas);
+
 
 
 function llenarSelect(arr) {
@@ -59,21 +80,4 @@ function llenarSelect(arr) {
 
 
 
-form.addEventListener("submit", function(event) {
-    event.preventDefault();
 
-
-    
-
-    if (accion.value == "consultor") {
-        window.location.href = "./panelConsultor.html";
-        console.log(datosIngreso);
-        return;
-        
-    } 
-    if(accion.value == "administrar"){
-        window.location.href = "./panelAmin.html";
-        return;
-    }
-  });
-  

@@ -7,6 +7,10 @@
     --boton-hover:#707070;
     --color-secundario:#A0A0A0;
     --color-borde:#333333;
+    --tamano-letra-grande: 24px;
+    --tamano-letra-mediana: 18px;
+    --tamano-letra-pequeña: 14px;
+    --tamano-letra-xs: 12px;
 }
 
 
@@ -71,7 +75,7 @@ select {
     color: black;
     font-family:'DM Sans', sans-serif ;
     font-weight: 400;
-    font-size: 18px;
+    font-size: var(--tamano-letra-mediana);
     padding: 10px 10px 10px 5px;
     display: block;
     width: 100%;
@@ -80,7 +84,7 @@ select {
 }
 input {
     background: white;
-    font-size: 18px;
+    font-size: var(--tamano-letra-mediana);
     padding: 10px 10px 10px 5px;
     display: block;
     width: 100%;
@@ -131,7 +135,7 @@ button {
     margin: 10px auto;
     height: 35px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: var(--tamano-letra-grande);
     font-weight: bold;
     color: black;
 }
@@ -167,6 +171,7 @@ button:hover {
     width: 100%;
     text-align: center;
     padding: 20px;
+    font-size: var(--tamano-letra-grande);
     background-color: var(--boton);
     -webkit-border-top-left-radius: 10px;
     -webkit-border-top-right-radius: 10px;
@@ -186,14 +191,16 @@ button:hover {
     width: 100%;
     height: auto;
     padding: 20px;
-    font-size: 20px;
+    font-size: var(--tamano-letra-grande);
     font-weight: 500;
     cursor: pointer;
 }
 #contenedor_tipos-matriz ul li:hover {
     background-color: var(--color-secundario);
 }
-
+#contenedor_tipos-matriz ul li:active {
+    color: var(--fondo);
+}
 #contenedor_matriz {
     width: 80%;
     height: 80vh;
@@ -218,11 +225,11 @@ button:hover {
     border-right: 0.5px solid var(--letra);
     color:var(--letra);
     padding: 5px;
-    font-size: 12px;
+    font-size: var(--tamano-letra-mediana);
     font-weight: bold;
 }
 table {
-    font-size: 12px;
+    font-size: var(--tamano-letra-mediana);
     table-layout: fixed;
     border-collapse: collapse;
     
@@ -269,6 +276,7 @@ nav {
 } 
 nav h2 {
     color:var(--letra);
+    font-size: var(--tamano-letra-grande);
 }
 nav .material-icons {
     color:var(--letra);
