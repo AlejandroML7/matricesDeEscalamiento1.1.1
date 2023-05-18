@@ -1,0 +1,68 @@
+{
+    "nombre": "El tiempo",
+    "contactos":[
+        {
+            
+        "id": 10233888299,
+        "nombre": "Andres Camargo",
+        "correo": "andrescamargo@correo.com",
+        "celular": 3248976589,
+        "disponible": "si",
+        "admin": "si",
+        "matriz": "noche"
+                
+        },
+        {
+            
+        "id": 10233888299,
+        "nombre": "Andres Camargo",
+        "correo": "andrescamargo@correo.com",
+        "celular": 3248976589,
+        "disponible": "si",
+        "admin": "no",
+        "matriz": "dia"
+                
+        },
+        {
+        "id": 10233888299,
+        "nombre": "Andres Camargo",
+        "correo": "andrescamargo@correo.com",
+        "celular": 3248976589,
+        "disponible": "si",
+        "admin": "no",
+        "matriz": "dia"
+        },
+        {
+        "id": 10233888299,
+        "nombre": "Andres Camargo",
+        "correo": "andrescamargo@correo.com",
+        "celular": 3248976589,
+        "disponible": "si",
+        "admin": "no",
+        "matriz": "dia"
+        },
+        {
+        "id": 10233888299,
+        "nombre": "Andres Camargo",
+        "correo": "andrescamargo@correo.com",
+        "celular": 3248976589,
+        "disponible": "si",
+        "admin": "no",
+        "matriz": "noche"
+        },
+        {
+        "id": 10233888299,
+        "nombre": "Andres Camargo",
+        "correo": "andrescamargo@correo.com",
+        "celular": 3248976589,
+        "disponible": "si",
+        "admin": "si",
+        "matriz": "dia"
+        }
+    ]
+        
+    
+
+
+    
+}
