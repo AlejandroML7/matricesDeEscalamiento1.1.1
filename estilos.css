@@ -190,6 +190,7 @@ button:hover {
 #contenedor_tipos-matriz ul li {
     width: 100%;
     height: auto;
+    text-align: center;
     padding: 20px;
     font-size: var(--tamano-letra-grande);
     font-weight: 500;
@@ -254,7 +255,7 @@ td {
     border-right: 0.5px solid var(--color-borde);
     border-bottom: 0.5px solid var(--color-borde);
 }
-tbody tr:hover {
+.tbody tr:hover {
     background: var(--color-primario-hover);
 }
 .btnTable {

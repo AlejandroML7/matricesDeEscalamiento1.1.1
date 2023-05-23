@@ -1,10 +1,12 @@
 const titulo = document.querySelector('#titulo');
 const diurno = document.querySelector('#t-diurno');
-const tablaDia = document.querySelector('#diurno');
-const tablaNoche = document.querySelector('#nocturno');
+
 const contenedorTiposMatriz = document.querySelector('#contenedor_tipos-matriz');
+const contenedorMatriz = document.querySelector('#contenedor_matriz');
 const ulListaTiposDeMatrices = document.querySelector('#lista_tipos-matrices');
 const tiposMatrices = [];
+let textos = [];
+
 
 // llamar a la funcion para mostrar los datos haciendo el filtro antes
 mostarJSON();
@@ -21,6 +23,7 @@ function mostarJSON() {
             
             let datos = JSON.parse(this.responseText);
             
+            
             //se crea un arreglo con todos los contactos
             const contactos = datos.contactos;
             
@@ -35,70 +38,75 @@ function mostarJSON() {
               });
               
               let nuevoArray = [...valoresMatriz];
-              
-             
-              
+
 
               llenarContenedorTiposMatriz(nuevoArray);
-            
+
+
+              //ddEventListener para los li para llenar las tablas haciendo un filtro con el textContent
+              ulListaTiposDeMatrices.addEventListener('click', (e)=>{
+
+                
+
+                const tabla = document.querySelector('#tabla');
+                const txt = e.target.textContent;
+                const tBody = document.querySelector('.tbody');
+                
+                while (tBody.firstChild) {
+                  tBody.removeChild(tBody.firstChild);
+                }
+        
+
+                //tBody.innerHTML = '';
+
+                const objetosFiltrados = contactos.filter(contacto => contacto.matriz === txt);
+
+                objetosFiltrados.forEach(objeto => {
+                  const valores = Object.values(objeto);
+                  const tr = document.createElement('tr');
+                  console.log(tr);
+                  valores.forEach(valor => {
+                    const td = document.createElement('td');
+                    td.innerText = valor;
+                    tr.appendChild(td);
+                  });
+                  tBody.appendChild(tr);
+                });
+                
+                tabla.classList.remove('oculto');
+                console.log(objetosFiltrados);
+
+                
+              } );
         }
     }
 }
 
 
+
+
 function llenarContenedorTiposMatriz(arr){
+
+    let contador = 1; 
+
     arr.forEach(obj =>{
         const li = document.createElement('li');
+        li.id = `item-${contador}`;
         li.textContent = obj;
+        
         ulListaTiposDeMatrices.appendChild(li);
-        })
+        contador++;
+        })  
 }
 
 
 
-/**   function crearTablaDesdeObjeto(Obj) {
-                const encabezados = Object.keys(Obj);
-                const valores = Object.values(Obj);
-                
-                
-                encabezados.forEach(encabezado => {
-                  const th = document.createElement('th');
-                  th.innerText = encabezado;
-                  trHead.appendChild(th);
-                });
-            
-            
-                valores.forEach(valor => {
-                    const td = document.createElement('td');
-                    td.innerText = valor;
-                    trBody.appendChild(td);
-                  });
-            
-                
-            
-              }*/
+ 
 
 
-// eventlisteners
 
-ulListaTiposDeMatrices.addEventListener('click', mostrarTabla);
 
-//funciones
 
-function mostrarTabla(e) {
-    
 
-    if (e.target.id === 't-diurno') {
-        tablaNoche.classList.add('oculto');
-        tablaDia.classList.remove('oculto');
-        return
-    } if (e.target.id === 't-nocturno') {
-        tablaDia.classList.add('oculto');
-        tablaNoche.classList.remove('oculto');
-        return;
-    } else {
-        console.log('error');
-    }
 
-    
-}
+
