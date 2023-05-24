@@ -60,7 +60,8 @@ function mostarJSON() {
                 //tBody.innerHTML = '';
 
                 const objetosFiltrados = contactos.filter(contacto => contacto.matriz === txt);
-
+                const tituloMatriz = document.querySelector('#titulo-matriz');
+                tituloMatriz.textContent= `Matriz: ${txt}`;
                 objetosFiltrados.forEach(objeto => {
                   const valores = Object.values(objeto);
                   const tr = document.createElement('tr');

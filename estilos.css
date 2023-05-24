@@ -146,12 +146,12 @@ button:hover {
 }
 .contenedor_tablas {
     width: 100%;
-    height: auto;
+    height: fit-content;
     display: flex;
 } 
 #contenedor_tipos-matriz{
-    width: 20%;
-    height: 40vh;
+    width: fit-content;
+    height: fit-content;
     margin-top: 60px;
     margin-left: 30px;
     display: flex;
@@ -170,7 +170,7 @@ button:hover {
 #contenedor_tipos-matriz h2 {
     width: 100%;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     font-size: var(--tamano-letra-grande);
     background-color: var(--boton);
     -webkit-border-top-left-radius: 10px;
@@ -182,6 +182,7 @@ button:hover {
 }
 #contenedor_tipos-matriz ul {
     list-style: none;
+    padding:   0;
     width: 100%;
     height: auto;
     display: flex;
@@ -230,7 +231,7 @@ button:hover {
     font-weight: bold;
 }
 table {
-    font-size: var(--tamano-letra-mediana);
+    font-size: var(--tamano-letra-pequeña);
     table-layout: fixed;
     border-collapse: collapse;
     
@@ -363,3 +364,70 @@ nav .material-icons {
 .oculto {
     display: none;
 }
+
+@media (max-width: 900px) {
+
+    .contenedor_tablas {
+        flex-direction: column;
+    }
+
+    #contenedor_tipos-matriz {
+      width: 100%;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      margin: 0;
+      
+      
+    }
+
+    #contenedor_tipos-matriz h2 {
+        width: fit-content;
+        font-size: var(--tamano-letra-pequeña);
+        margin: 0;
+        padding: auto;
+    }
+        
+    
+    #contenedor_tipos-matriz ul {
+      flex-direction: row;
+      justify-content: flex-start;
+      width: auto;
+    }
+    
+    #contenedor_tipos-matriz ul li {
+    
+      font-size: var(--tamano-letra-pequeña);
+    }
+
+
+    
+  }
+  @media (max-width: 1000px) {
+
+    #contenedor_matriz {
+        width: 100%;
+        height: fit-content;
+        
+    }
+    .matriz caption {
+        padding: 3px;
+        font-size: var(--tamano-letra-pequeña);
+        
+    }
+    table {
+        font-size: var(--tamano-letra-xs);
+        
+    }
+    
+    th {
+        
+        padding: 2px;
+        
+        
+    }
+    td {
+        padding: 2px;
+        
+    }
+  }

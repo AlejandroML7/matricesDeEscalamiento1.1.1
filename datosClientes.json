@@ -3,14 +3,13 @@
     "contactos":[
         {
             
-        "id": 10233888299,
-        "nombre": "Andres Camargo",
-        "correo": "andrescamargo@correo.com",
-        "celular": 3248976589,
-        "disponible": "si",
+        "id": 186579,
+        "nombre": "Andrea Diaz",
+        "correo": "andreaDiaz@correo.com",
+        "celular": 3242333344,
+        "disponible": "no",
         "admin": "si",
-        "matriz": "tarde"
-                
+        "matriz": "capa_de_red"     
         },
         {
             
@@ -20,7 +19,7 @@
         "celular": 3248976589,
         "disponible": "si",
         "admin": "no",
-        "matriz": "noche"
+        "matriz": "capa_de_red"
                 
         },
         {
@@ -30,7 +29,7 @@
         "celular": 3248976589,
         "disponible": "si",
         "admin": "no",
-        "matriz": "dia"
+        "matriz": "capa_de_red"
         },
         {
         "id": 10233888299,
@@ -39,7 +38,7 @@
         "celular": 3248976589,
         "disponible": "si",
         "admin": "no",
-        "matriz": "dia"
+        "matriz": "capa_de_servicio"
         },
         {
         "id": 10233888299,
@@ -48,7 +47,7 @@
         "celular": 3248976589,
         "disponible": "si",
         "admin": "no",
-        "matriz": "dia"
+        "matriz": "capa_de_servicio"
         },
         {
         "id": 10233888299,
@@ -57,8 +56,80 @@
         "celular": 3248976589,
         "disponible": "si",
         "admin": "si",
-        "matriz": "dia"
-        }
+        "matriz": "capa_de_servicio"
+        },
+        {
+            "id": 10233888299,
+            "nombre": "Andres Camargo",
+            "correo": "andrescamargo@correo.com",
+            "celular": 3248976589,
+            "disponible": "si",
+            "admin": "si",
+            "matriz": "capa_de_aplicación"
+        },
+        {
+            "id": 10233888299,
+            "nombre": "Andres Camargo",
+            "correo": "andrescamargo@correo.com",
+            "celular": 3248976589,
+            "disponible": "si",
+            "admin": "si",
+            "matriz": "capa_de_soporte"
+        },
+        {
+            "id": 10233888299,
+            "nombre": "Andres Camargo",
+            "correo": "andrescamargo@correo.com",
+            "celular": 3248976589,
+            "disponible": "si",
+            "admin": null,
+            "matriz": "capa_de_aplicación"
+        },
+        {
+            "id": 10233888299,
+            "nombre": "Andres Camargo",
+            "correo": "andrescamargo@correo.com",
+            "celular": 3248976589,
+            "disponible": "si",
+            "admin": "si",
+            "matriz": "capa_de_servicio"
+        },
+        {
+            "id": 10233888299,
+            "nombre": "Andres Camargo",
+            "correo": "andrescamargo@correo.com",
+            "celular": 3248976589,
+            "disponible": "si",
+            "admin": "si",
+            "matriz": "capa_de_red"
+        },
+        {
+            "id": 10233888299,
+            "nombre": "Andres Camargo",
+            "correo": "andrescamargo@correo.com",
+            "celular": 3248976589,
+            "disponible": "si",
+            "admin": "si",
+            "matriz": "capa_de_servicio"
+        },
+        {
+            "id": 10233888299,
+            "nombre": "Andres Camargo",
+            "correo": "andrescamargo@correo.com",
+            "celular": 3248976589,
+            "disponible": "si",
+            "admin": false,
+            "matriz": "capa_de_servicio"
+        },
+        {
+            "id": 10233888299,
+            "nombre": "Andres Camargo",
+            "correo": "andrescamargo@correo.com",
+            "celular": 3248976589,
+            "disponible": "si",
+            "admin": "si",
+            "matriz": "capa_de_aplicación"
+            }
     ]
         
     
