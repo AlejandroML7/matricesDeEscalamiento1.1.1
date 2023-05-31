@@ -126,20 +126,23 @@ label {
 input:focus~.barra::before {
     width: 100%;
 }
-button {
+#ingresar{
+    text-decoration: none;
     font-family: 'Roboto';
     background-color: var(--boton);
     border: none;
     display: block;
-    width: 40%;
+    width: 35%;
     margin: 10px auto;
-    height: 35px;
+    height: 30px;
     cursor: pointer;
     font-size: var(--tamano-letra-grande);
     font-weight: bold;
     color: black;
+    text-align: center;
 }
-button:hover {
+
+#ingresar:hover {
     background-color: var(--boton-hover);
     font-weight: bold;
     color: var(--color-primario);

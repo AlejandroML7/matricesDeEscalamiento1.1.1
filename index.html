@@ -4,52 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="./estilos.css">
-    <title>Consultar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,700;1,400&family=Inter:wght@300;500&family=Roboto:ital,wght@0,300;0,400;1,100;1,500&family=Rubik:ital,wght@0,300;0,500;1,600&display=swap" rel="stylesheet">
+    <title>form</title>
 </head>
 <body>
-    <nav>
-        <h2 id ="titulo">Bienvenido: </h2>
-        <a href="./formulario.html"><span class="material-symbols-outlined">
-            logout
-            </span></a>
-    </nav>
-
-    
-    <main class="contenedor_tablas">
-
-        <section id="contenedor_tipos-matriz">
-            <h2>Tipos de Matriz</h2>
-           <ul id="lista_tipos-matrices">
-                
-           </ul>
-        </section>
-        
-        <section id="contenedor_matriz">
-            <div class="matriz oculto" id="tabla">
-                <table>
-                    <caption id="titulo-matriz"></caption>
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Nombre</th>
-                            <th>Correo</th>
-                            <th>Celular</th>
-                            <th>Disponible</th>
-                            <th>Administrador</th>
-                            <th>ID empresa</th>
-                            <th>Tipo Matriz</th>
-                        </tr> 
-                    </thead>
-                    <tbody class="tbody">
-                        
-                    </tbody>
-                </table>                
-            </div>
+<div class="contenedor_formulario">
+    <form action=""  id="form">
+        <div class="form">
+            <h1>LOG IN</h1>
             
-        </section>  
-    </main>
-    <script src="./consultor.js"></script>
-</body> 
+            <div class="grupo">
+                <input type="email" name="" id="email" required><span class="barra"></span>
+                <label for="">Email</label>
+            </div>
+            <div class="grupo">
+                <input type="password" name="" id="password" required><span class="barra"></span>
+                <label for="">Password</label>
+            </div>
+            <a href="./panelConsultor.html" id="ingresar">Ingresar</a>
+            
+        </div>
+    </form>
+</div>
+    
+    
+    <script src="./app.js"></script>
+   
+</body>
 </html>
