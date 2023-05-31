@@ -2,148 +2,131 @@
     "nombre": "El tiempo",
     "contactos":[
         {
-            
-        "id": 186579,
-        "nombre": "Andrea Diaz",
-        "correo": "andreaDiaz@correo.com",
-        "celular": 3242333344,
-        "disponible": "no",
-        "admin": "si",
-        "id empresa": 1122233332,
-        "matriz": "capa_de_red"     
+
+            "Active": true,
+
+            "Company": "BANCOLOMBIA S.A.",
+
+            "ContactName": "12345678910",
+
+            "Department": "BANCOLOMBIA S.A./IT",
+
+            "DeptName": "IT",
+
+            "Email": "bancolombia@bancolombia.com",
+
+            "EmployeeUser": "123456789",
+
+            "FullName": "usuario bacolombia",
+
+            "IDCompany": "890903938-8",
+
+            "Matriz": "RED",
+
+            "MatrizDispo": "si"
+
         },
         {
-            
-        "id": 10233888299,
-        "nombre": "Andres Camargo",
-        "correo": "andrescamargo@correo.com",
-        "celular": 3248976589,
-        "disponible": "si",
-        "admin": "no",
-        "id empresa": 1122233332,
-        "matriz": "capa_de_red"
-                
+
+            "Active": true,
+
+            "Company": "BANCOLOMBIA S.A.",
+
+            "ContactName": "12345678910",
+
+            "Department": "BANCOLOMBIA S.A./IT",
+
+            "DeptName": "IT",
+
+            "Email": "bancolombia@bancolombia.com",
+
+            "EmployeeUser": "123456789",
+
+            "FullName": "usuario bacolombia",
+
+            "IDCompany": "890903938-8",
+
+            "Matriz": "RED",
+
+            "MatrizDispo": "si"
+
         },
         {
-        "id": 10233888299,
-        "nombre": "Andres Camargo",
-        "correo": "andrescamargo@correo.com",
-        "celular": 3248976589,
-        "disponible": "si",
-        "admin": "no",
-        "id empresa": 1122233332,
-        "matriz": "capa_de_red"
+
+            "Active": true,
+
+            "Company": "BANCOLOMBIA S.A.",
+
+            "ContactName": "12345678910",
+
+            "Department": "BANCOLOMBIA S.A./IT",
+
+            "DeptName": "IT",
+
+            "Email": "bancolombia@bancolombia.com",
+
+            "EmployeeUser": "123456789",
+
+            "FullName": "usuario bacolombia",
+
+            "IDCompany": "890903938-8",
+
+            "Matriz": "RED",
+
+            "MatrizDispo": "si"
+
         },
         {
-        "id": 10233888299,
-        "nombre": "Andres Camargo",
-        "correo": "andrescamargo@correo.com",
-        "celular": 3248976589,
-        "disponible": "si",
-        "admin": "no",
-        "id empresa": 1122233332,
-        "matriz": "capa_de_servicio"
+
+            "Active": true,
+
+            "Company": "BANCOLOMBIA S.A.",
+
+            "ContactName": "12345678910",
+
+            "Department": "BANCOLOMBIA S.A./IT",
+
+            "DeptName": "IT",
+
+            "Email": "bancolombia@bancolombia.com",
+
+            "EmployeeUser": "123456789",
+
+            "FullName": "usuario bacolombia",
+
+            "IDCompany": "890903938-8",
+
+            "Matriz": "RED",
+
+            "MatrizDispo": "si"
+
         },
+        
         {
-        "id": 10233888299,
-        "nombre": "Andres Camargo",
-        "correo": "andrescamargo@correo.com",
-        "celular": 3248976589,
-        "disponible": "si",
-        "admin": "no",
-        "id empresa": 1122233332,
-        "matriz": "capa_de_servicio"
-        },
-        {
-        "id": 10233888299,
-        "nombre": "Andres Camargo",
-        "correo": "andrescamargo@correo.com",
-        "celular": 3248976589,
-        "disponible": "si",
-        "admin": "si",
-        "id empresa": 1122233332,
-        "matriz": "capa_de_servicio"
-        },
-        {
-            "id": 10233888299,
-            "nombre": "Andres Camargo",
-            "correo": "andrescamargo@correo.com",
-            "celular": 3248976589,
-            "disponible": "si",
-            "admin": "si",
-            "id empresa": 1122233332,
-            "matriz": "capa_de_aplicación"
-        },
-        {
-            "id": 10233888299,
-            "nombre": "Andres Camargo",
-            "correo": "andrescamargo@correo.com",
-            "celular": 3248976589,
-            "disponible": "si",
-            "admin": "si",
-            "id empresa": 1122233332,
-            "matriz": "capa_de_soporte"
-        },
-        {
-            "id": 10233888299,
-            "nombre": "Andres Camargo",
-            "correo": "andrescamargo@correo.com",
-            "celular": 3248976589,
-            "disponible": "si",
-            "admin": null,
-            "id empresa": 1122233332,
-            "matriz": "capa_de_aplicación"
-        },
-        {
-            "id": 10233888299,
-            "nombre": "Andres Camargo",
-            "correo": "andrescamargo@correo.com",
-            "celular": 3248976589,
-            "disponible": "si",
-            "admin": "si",
-            "id empresa": 1122233332,
-            "matriz": "capa_de_servicio"
-        },
-        {
-            "id": 10233888299,
-            "nombre": "Andres Camargo",
-            "correo": "andrescamargo@correo.com",
-            "celular": 3248976589,
-            "disponible": "si",
-            "admin": "si",
-            "id empresa": 1122233332,
-            "matriz": "capa_de_red"
-        },
-        {
-            "id": 10233888299,
-            "nombre": "Andres Camargo",
-            "correo": "andrescamargo@correo.com",
-            "celular": 3248976589,
-            "disponible": "si",
-            "admin": "si",
-            "id empresa": 1122233332,
-            "matriz": "capa_de_servicio"
-        },
-        {
-            "id": 10233888299,
-            "nombre": "Andres Camargo",
-            "correo": "andrescamargo@correo.com",
-            "celular": 3248976589,
-            "disponible": "si",
-            "admin": false,
-            "id empresa": 1122233332,
-            "matriz": "capa_de_servicio"
-        },
-        {
-            "id": 10233888299,
-            "nombre": "Andres Camargo",
-            "correo": "andrescamargo@correo.com",
-            "celular": 3248976589,
-            "disponible": "si",
-            "admin": "si",
-            "id empresa": 1122233332,
-            "matriz": "capa_de_aplicación"
-            }
+
+            "Active": true,
+
+            "Company": "BANCOLOMBIA S.A.",
+
+            "ContactName": "12345678910",
+
+            "Department": "BANCOLOMBIA S.A./IT",
+
+            "DeptName": "IT",
+
+            "Email": "bancolombia@bancolombia.com",
+
+            "EmployeeUser": "123456789",
+
+            "FullName": "usuario bacolombia",
+
+            "IDCompany": "890903938-8",
+
+            "Matriz": "RED",
+
+            "MatrizDispo": "si"
+
+        }
     ]
         
     

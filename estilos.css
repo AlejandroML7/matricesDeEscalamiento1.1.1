@@ -48,6 +48,7 @@ form {
     margin: 40px;
     width: 450px;
     background-color:var(--color-primario);
+    border-top: 15px solid red;
     padding: 30px 10px;
     -webkit-box-shadow: -4px 4px 10px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: -4px 4px 10px -1px rgba(0,0,0,0.75);
@@ -129,8 +130,9 @@ input:focus~.barra::before {
 #ingresar{
     text-decoration: none;
     font-family: 'Roboto';
-    background-color: var(--boton);
+    background-color: rgb(221, 29, 29);
     border: none;
+    border-radius: 5px;
     display: block;
     width: 35%;
     margin: 10px auto;
@@ -138,7 +140,7 @@ input:focus~.barra::before {
     cursor: pointer;
     font-size: var(--tamano-letra-grande);
     font-weight: bold;
-    color: black;
+    color: rgb(204, 196, 196);
     text-align: center;
 }
 
@@ -175,13 +177,14 @@ input:focus~.barra::before {
     text-align: center;
     padding: 15px;
     font-size: var(--tamano-letra-grande);
-    background-color: var(--boton);
+    background-color: rgb(228, 28, 28);
     -webkit-border-top-left-radius: 10px;
     -webkit-border-top-right-radius: 10px;
     -moz-border-radius-topleft: 10px;
     -moz-border-radius-topright: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    color: var(--fondo);
 }
 #contenedor_tipos-matriz ul {
     list-style: none;
@@ -201,7 +204,8 @@ input:focus~.barra::before {
     cursor: pointer;
 }
 #contenedor_tipos-matriz ul li:hover {
-    background-color: var(--color-secundario);
+    background-color: rgb(228, 28, 28);
+    color: var(--fondo);
 }
 #contenedor_tipos-matriz ul li:active {
     color: var(--fondo);
@@ -221,6 +225,7 @@ input:focus~.barra::before {
     -webkit-box-shadow: -4px 4px 10px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: -4px 4px 10px -1px rgba(0,0,0,0.75);
     box-shadow: -4px 4px 10px -1px rgba(0,0,0,0.75);
+    border-top: 10px solid rgb(228, 28, 28);
     
 }
 .matriz caption {
@@ -238,10 +243,11 @@ table {
     table-layout: fixed;
     border-collapse: collapse;
     
+    
 }
 thead {
     background:var(--color-primario); 
-    border: 0.5px solid var(--color-borde);
+    border: 0.5px solid rgb(228, 28, 28);
 }
 th {
     color:var(--letra);

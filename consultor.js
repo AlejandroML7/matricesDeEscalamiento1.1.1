@@ -16,7 +16,7 @@ function mostarJSON() {
 
     //petición de los datos al API
     const xhttp = new XMLHttpRequest();
-    xhttp.open('GET','http://localhost/datosClientes.json', true);
+    xhttp.open('GET','./datosClientes.json', true);
     xhttp.send();
     xhttp.onreadystatechange = function(){
         if(this.readyState == 4 && this.status == 200){
@@ -26,12 +26,13 @@ function mostarJSON() {
             
             //se crea un arreglo con todos los contactos
             const contactos = datos.contactos;
-            
+            console.log(contactos);
             
               // se recorre el array de los contactos para obtener cuantas variantes de matriz tiene el cliente
               let valoresMatriz = new Set();
               contactos.forEach(objeto => {
-                let tipoMatriz = objeto.matriz;
+                let tipoMatriz = objeto.Matriz;
+
                 if (tipoMatriz) {
                   valoresMatriz.add(tipoMatriz);
                 }
@@ -59,7 +60,7 @@ function mostarJSON() {
 
                 //tBody.innerHTML = '';
 
-                const objetosFiltrados = contactos.filter(contacto => contacto.matriz === txt);
+                const objetosFiltrados = contactos.filter(contacto => contacto.Matriz === txt);
                 const tituloMatriz = document.querySelector('#titulo-matriz');
                 tituloMatriz.textContent= `Matriz: ${txt}`;
                 objetosFiltrados.forEach(objeto => {
