@@ -3,7 +3,7 @@ const contenedorTiposMatriz = document.querySelector('#contenedor_tipos-matriz')
 const contenedorMatriz = document.querySelector('#contenedor_matriz');
 const ulListaTiposDeMatrices = document.querySelector('#lista_tipos-matrices');
 const tiposMatrices = [];
-
+const url = 'datosClientes.json';
 let textos = [];
 
 
@@ -28,7 +28,9 @@ document.addEventListener('DOMContentLoaded',()=>{
 })
 
 
+                
 
+                
 function funcionAdmin(){
   console.log('ingreso como administrador');
   const sectionContactos = document.createElement('section');
@@ -36,12 +38,13 @@ function funcionAdmin(){
   document.body.appendChild(sectionContactos);
   let datosJson;
 //basic autentications
-  fetch('datosClientes.json')
+  fetch(url)
     .then(res => res.json())
     .then((salida) => {
       datosJson = salida;
-      const contactos = datosJson.contactos;//crea un array con todos los contactos
-
+      
+      const contactos = datosJson.content;//crea un array con todos los contactos
+      console.log(contactos);
       //creamos un aside donde va un boton que lista todos los contactos y la lista de contactos
       const aside = document.createElement('aside');
       aside.id = "selct_lista-contactos";
@@ -62,6 +65,12 @@ function funcionAdmin(){
       btnCerrar.id = "lista_contactos-cerrar"
       btnCerrar.textContent = 'X';
 
+      
+        
+        
+        
+        
+
       //div para contener los contactos en una lista 
       const divListacontactos = document.createElement('div');
       divListacontactos.id = 'contenedor_contactos';
@@ -72,12 +81,14 @@ function funcionAdmin(){
         while (divListacontactos.firstChild) {
           divListacontactos.removeChild(divListacontactos.firstChild);
         }
+        
+
         btnContactos.remove();
         aside.appendChild(btnCerrar);
 
         
         
-
+        
         // ul para contener cada li con un contacto
         const ul = document.createElement('ul');
         divListacontactos.appendChild(ul);
@@ -86,8 +97,8 @@ function funcionAdmin(){
 
         //recorrer la lista de contactos y mostrarlos en pantalla
         contactos.forEach(contacto =>{
-          const nombre = contacto.FullName;
-          const id = contacto.EmployeeUser;
+          const nombre = contacto.Contact.FullName;
+          const id = contacto.Contact.EmployeeUser;
           const li = document.createElement('li');
           li.innerHTML = `${nombre}  `;
           ul.appendChild(li);
@@ -112,25 +123,25 @@ function funcionAdmin(){
           
           //filtramos del objeto con los contactos el contacto seleccionado
           const nombreSeleccionado = e.target.textContent.trim();
-          const contactoSeleccionado = contactos.find(contacto => contacto.FullName === nombreSeleccionado);
+          const contactoSeleccionado = contactos.find(contacto => contacto.Contact.FullName === nombreSeleccionado);
           while (divContactoSeleccionado.firstChild) {
             divContactoSeleccionado.removeChild(divContactoSeleccionado.firstChild);
           }
           if (contactoSeleccionado) {
           
-          const contenidoDiv = `<h2>${contactoSeleccionado.FullName}</h2>
-                                <p>ID: ${contactoSeleccionado.EmployeeUser}</p>
-                                <p>Active: ${contactoSeleccionado.Active}</p>
-                                <p>Company: ${contactoSeleccionado.Company}</p>
-                                <p>ContactName: ${contactoSeleccionado.ContactName}</p>
-                                <p>Department: ${contactoSeleccionado.Department}</p>
-                                <p>DeptName: ${contactoSeleccionado.DeptName}</p>
-                                <p>Email: ${contactoSeleccionado.Email}</p>
-                                <p>IDCompany: ${contactoSeleccionado.IDCompany}</p>
+          const contenidoDiv = `<h2>${contactoSeleccionado.Contact.FullName}</h2>
+                                <p>ID: ${contactoSeleccionado.Contact.EmployeeUser}</p>
+                                <p>Active: ${contactoSeleccionado.Contact.Active}</p>
+                                <p>Company: ${contactoSeleccionado.Contact.Company}</p>
+                                <p>ContactName: ${contactoSeleccionado.Contact.ContactName}</p>
+                                <p>Department: ${contactoSeleccionado.Contact.Department}</p>
+                                <p>DeptName: ${contactoSeleccionado.Contact.DeptName}</p>
+                                <p>Email: ${contactoSeleccionado.Contact.Email}</p>
+                                <p>IDCompany: ${contactoSeleccionado.Contact.IDCompany}</p>
                                 `
                                /* <div id="contenedor_confg-matriz">
                                 <h3>Matriz:</h3>
-                                <p>${contactoSeleccionado.Matriz}</p> 
+                                <p>${contactoSeleccionado.Contact.Matriz}</p> 
                                 <span class="material-symbols-outlined" id="btnEditMatriz">
                                 edit_note
                                 </span>
@@ -138,7 +149,7 @@ function funcionAdmin(){
                                 <h3>Disponible:</h3>
                                 <div id="contenedor_confg-disponible">
                                 <select name="disponible">
-                                <option value=${contactoSeleccionado.MatrizDispo}>${contactoSeleccionado.MatrizDispo}</option>
+                                <option value=${contactoSeleccionado.Contact.MatrizDispo}>${contactoSeleccionado.Contact.MatrizDispo}</option>
                                 <option value="si">si</option>
                                 <option value="no">no</option>
                                 </select>
@@ -155,7 +166,7 @@ function funcionAdmin(){
                   const tiuloMatriz = document.createElement('h3');
                   tiuloMatriz.textContent = 'Matriz:';
                   const pMatriz = document.createElement('p');
-                  pMatriz.textContent = contactoSeleccionado.Matriz;
+                  pMatriz.textContent = contactoSeleccionado.Contact.Matriz;
                   const btnEdit = document.createElement('span');
                   btnEdit.classList.add('material-symbols-outlined');
                   btnEdit.id = 'btnEditMatriz';
@@ -166,7 +177,7 @@ function funcionAdmin(){
                   dispTitle.textContent = 'disponible:';
                   const disp = document.createElement('p');
                   disp.id = 'disponible-cambiar';
-                  disp.textContent =contactoSeleccionado.MatrizDispo;
+                  disp.textContent =contactoSeleccionado.Contact.MatrizDispo;
                   const btnEditDisp = document.createElement('span');
                   btnEditDisp.classList.add('material-symbols-outlined');
                   btnEditDisp.id = 'btnEditDispMatriz';
@@ -177,12 +188,14 @@ function funcionAdmin(){
                   contenedorConfigDispo.appendChild(dispTitle);
                   contenedorConfigDispo.appendChild(disp);
                   contenedorConfigDispo.appendChild(btnEditDisp);
-                  
+
                   
                   divContactoSeleccionado.appendChild(contenedorConfigMatriz);
                   divContactoSeleccionado.appendChild(contenedorConfigDispo);
 
-                  
+                  btnEdit.addEventListener('click',(e)=>{
+                    pMatriz.remove();
+                  })
 
                   
                   btnCerrar.addEventListener('click',(e)=>{
@@ -191,6 +204,7 @@ function funcionAdmin(){
                   
           }
         });
+        
         
       })
 
@@ -222,7 +236,7 @@ function mostarJSON() {
 
     //petición de los datos al API
     const xhttp = new XMLHttpRequest();
-    xhttp.open('GET','./datosClientes.json', true);
+    xhttp.open('GET',url, true);
     xhttp.send();
     xhttp.onreadystatechange = function(){
         if(this.readyState == 4 && this.status == 200){
@@ -231,13 +245,14 @@ function mostarJSON() {
             
             
             //se crea un arreglo con todos los contactos
-            const contactos = datos.contactos;
+            const contactos = datos.content;
             
+            console.log(contactos);
             
               // se recorre el array de los contactos para obtener cuantas variantes de matriz tiene el cliente
               let valoresMatriz = new Set();
               contactos.forEach(objeto => {
-                let tipoMatriz = objeto.Matriz;
+                let tipoMatriz = objeto.Contact.Matriz;
 
                 if (tipoMatriz) {
                   valoresMatriz.add(tipoMatriz);
@@ -253,22 +268,26 @@ function mostarJSON() {
               //ddEventListener para los li para llenar las tablas haciendo un filtro con el textContent
               ulListaTiposDeMatrices.addEventListener('click', (e)=>{
 
-                
+               
 
                 const tabla = document.querySelector('#tabla');
                 const txt = e.target.textContent;
+                
                 const tBody = document.querySelector('.tbody');
                 
                 while (tBody.firstChild) {
                   tBody.removeChild(tBody.firstChild);
                 }
-                const objetosFiltrados = contactos.filter(contacto => contacto.Matriz === txt);
+                const objetosFiltrados = contactos.filter(contacto => contacto.Contact.Matriz === txt);
+                
                 const tituloMatriz = document.querySelector('#titulo-matriz');
                 tituloMatriz.textContent= `Matriz: ${txt}`;
+                
                 objetosFiltrados.forEach(objeto => {
-                  const valores = Object.values(objeto);
+                  const contacto = objeto.Contact;
+                  const valores = Object.values(contacto);
                   const tr = document.createElement('tr');
-                  console.log(tr);
+                  
                   valores.forEach(valor => {
                     const td = document.createElement('td');
                     td.innerText = valor;
@@ -278,7 +297,7 @@ function mostarJSON() {
                 });
                 
                 tabla.classList.remove('oculto');
-                console.log(objetosFiltrados);
+                
 
                 
               } );
@@ -302,6 +321,7 @@ function llenarContenedorTiposMatriz(arr){
         contador++;
         })  
 }
+
 /*
 // Obtén el nuevo valor de "Matriz" del input
 const nuevoMatriz = document.getElementById('inputMatriz').value;

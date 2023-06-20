@@ -1,511 +1,194 @@
 {
-    "nombre": "El tiempo",
-    "contactos":[
+
+    "@count": 1,
+
+    "@start": 1,
+
+    "@totalcount": 1,
+
+    "Messages": [],
+
+    "ResourceName": "Contact",
+
+    "ReturnCode": 0,
+
+    "content": [
+
         {
 
-            "Active": true,
+            "Contact": {
 
-            "Company": "BANCOLOMBIA S.A.",
+                "Active": true,
 
-            "ContactName": "12345678910",
+                "Company": "BANCOLOMBIA S.A.",
 
-            "Department": "BANCOLOMBIA S.A./IT",
+                "ContactName": "12345678910",
 
-            "DeptName": "IT",
+                "Department": "BANCOLOMBIA S.A./IT",
 
-            "Email": "bancolombia@bancolombia.com",
+                "DeptName": "IT",
 
-            "EmployeeUser": "123456789",
+                "Email": "bancolombia@bancolombia.com",
 
-            "FullName": "Juan García",
+                "EmployeeUser": "123456789",
 
-            "IDCompany": "890903938-8",
+                "FullName": "Ana López",
 
-            "Matriz": "capa_red",
+                "IDCompany": "890903938-8",
 
-            "MatrizDispo": "no"
+                "Matriz": "capa_red",
+
+                "MatrizDispo": true
+
+            }
 
         },
         {
 
-            "Active": true,
+            "Contact": {
 
-            "Company": "BANCOLOMBIA S.A.",
+                "Active": true,
 
-            "ContactName": "12345678910",
+                "Company": "BANCOLOMBIA S.A.",
 
-            "Department": "BANCOLOMBIA S.A./IT",
+                "ContactName": "12345678910",
 
-            "DeptName": "IT",
+                "Department": "BANCOLOMBIA S.A./IT",
 
-            "Email": "bancolombia@bancolombia.com",
+                "DeptName": "IT",
 
-            "EmployeeUser": "123456789",
+                "Email": "bancolombia@bancolombia.com",
 
-            "FullName": "María Rodríguez",
+                "EmployeeUser": "123456789",
 
-            "IDCompany": "890903938-8",
+                "FullName": "Luis Rodríguez",
 
-            "Matriz": "capa_soporte",
+                "IDCompany": "890903938-8",
 
-            "MatrizDispo": "si"
+                "Matriz": "capa_red",
 
-        },
-        {
+                "MatrizDispo": true
 
-            "Active": true,
-
-            "Company": "BANCOLOMBIA S.A.",
-
-            "ContactName": "12345678910",
-
-            "Department": "BANCOLOMBIA S.A./IT",
-
-            "DeptName": "IT",
-
-            "Email": "bancolombia@bancolombia.com",
-
-            "EmployeeUser": "123456789",
-
-            "FullName": "Carlos López",
-
-            "IDCompany": "890903938-8",
-
-            "Matriz": "capa_aplicacion",
-
-            "MatrizDispo": "no"
+            }
 
         },
         {
 
-            "Active": true,
+            "Contact": {
 
-            "Company": "BANCOLOMBIA S.A.",
+                "Active": true,
 
-            "ContactName": "12345678910",
+                "Company": "BANCOLOMBIA S.A.",
 
-            "Department": "BANCOLOMBIA S.A./IT",
+                "ContactName": "12345678910",
 
-            "DeptName": "IT",
+                "Department": "BANCOLOMBIA S.A./IT",
 
-            "Email": "bancolombia@bancolombia.com",
+                "DeptName": "IT",
 
-            "EmployeeUser": "123456789",
+                "Email": "bancolombia@bancolombia.com",
 
-            "FullName": "Laura García",
+                "EmployeeUser": "123456789",
 
-            "IDCompany": "890903938-8",
+                "FullName": "Laura García",
 
-            "Matriz": "capa_aplicacion",
+                "IDCompany": "890903938-8",
 
-            "MatrizDispo": "si"
+                "Matriz": "capa_aplicacion",
 
-        },
-        
-        {
+                "MatrizDispo": true
 
-            "Active": true,
-
-            "Company": "BANCOLOMBIA S.A.",
-
-            "ContactName": "12345678910",
-
-            "Department": "BANCOLOMBIA S.A./IT",
-
-            "DeptName": "IT",
-
-            "Email": "bancolombia@bancolombia.com",
-
-            "EmployeeUser": "123456789",
-
-            "FullName": "Luis Rodríguez",
-
-            "IDCompany": "890903938-8",
-
-            "Matriz": "capa_red",
-
-            "MatrizDispo": "si"
+            }
 
         },
         {
 
-            "Active": true,
+            "Contact": {
 
-            "Company": "BANCOLOMBIA S.A.",
+                "Active": true,
 
-            "ContactName": "12345678910",
+                "Company": "BANCOLOMBIA S.A.",
 
-            "Department": "BANCOLOMBIA S.A./IT",
+                "ContactName": "12345678910",
 
-            "DeptName": "IT",
+                "Department": "BANCOLOMBIA S.A./IT",
 
-            "Email": "bancolombia@bancolombia.com",
+                "DeptName": "IT",
 
-            "EmployeeUser": "123456789",
+                "Email": "bancolombia@bancolombia.com",
 
-            "FullName": "Ana López",
+                "EmployeeUser": "123456789",
 
-            "IDCompany": "890903938-8",
+                "FullName": "Carlos López",
 
-            "Matriz": "capa_red",
+                "IDCompany": "890903938-8",
 
-            "MatrizDispo": "si"
+                "Matriz": "capa_aplicacion",
 
-        },
-        {
+                "MatrizDispo": true
 
-            "Active": true,
-
-            "Company": "BANCOLOMBIA S.A.",
-
-            "ContactName": "12345678910",
-
-            "Department": "BANCOLOMBIA S.A./IT",
-
-            "DeptName": "IT",
-
-            "Email": "bancolombia@bancolombia.com",
-
-            "EmployeeUser": "123456789",
-
-            "FullName": "Andrés Martínez",
-
-            "IDCompany": "890903938-8",
-
-            "Matriz": "capa_soporte",
-
-            "MatrizDispo": "si"
+            }
 
         },
         {
 
-            "Active": true,
+            "Contact": {
 
-            "Company": "BANCOLOMBIA S.A.",
+                "Active": true,
 
-            "ContactName": "12345678910",
+                "Company": "BANCOLOMBIA S.A.",
 
-            "Department": "BANCOLOMBIA S.A./IT",
+                "ContactName": "12345678910",
 
-            "DeptName": "IT",
+                "Department": "BANCOLOMBIA S.A./IT",
 
-            "Email": "bancolombia@bancolombia.com",
+                "DeptName": "IT",
 
-            "EmployeeUser": "123456759",
+                "Email": "bancolombia@bancolombia.com",
 
-            "FullName": "Andrea Martínez",
+                "EmployeeUser": "123456789",
 
-            "IDCompany": "890903938-8",
+                "FullName": "María Rodríguez",
 
-            "Matriz": "capa_aplicacion",
+                "IDCompany": "890903938-8",
 
-            "MatrizDispo": "si"
+                "Matriz": "capa_soporte",
 
-        },
-        {
+                "MatrizDispo": true
 
-            "Active": true,
-
-            "Company": "BANCOLOMBIA S.A.",
-
-            "ContactName": "12345678910",
-
-            "Department": "BANCOLOMBIA S.A./IT",
-
-            "DeptName": "IT",
-
-            "Email": "bancolombia@bancolombia.com",
-
-            "EmployeeUser": "1234567689",
-
-            "FullName": "José González",
-
-            "IDCompany": "890903938-8",
-
-            "Matriz": "capa_aplicacion",
-
-            "MatrizDispo": "si"
+            }
 
         },
         {
 
-            "Active": true,
+            "Contact": {
 
-            "Company": "BANCOLOMBIA S.A.",
+                "Active": true,
 
-            "ContactName": "12345678910",
+                "Company": "BANCOLOMBIA S.A.",
 
-            "Department": "BANCOLOMBIA S.A./IT",
+                "ContactName": "12345678910",
 
-            "DeptName": "IT",
+                "Department": "BANCOLOMBIA S.A./IT",
 
-            "Email": "bancolombia@bancolombia.com",
+                "DeptName": "IT",
 
-            "EmployeeUser": "1237456789",
+                "Email": "bancolombia@bancolombia.com",
 
-            "FullName": "Carolina González",
+                "EmployeeUser": "123456789",
 
-            "IDCompany": "890903938-8",
+                "FullName": "Juan García",
 
-            "Matriz": "capa_red",
+                "IDCompany": "890903938-8",
 
-            "MatrizDispo": "si"
+                "Matriz": "capa_red",
 
-        },
-        {
+                "MatrizDispo": true
 
-            "Active": true,
-
-            "Company": "BANCOLOMBIA S.A.",
-
-            "ContactName": "12345678910",
-
-            "Department": "BANCOLOMBIA S.A./IT",
-
-            "DeptName": "IT",
-
-            "Email": "bancolombia@bancolombia.com",
-
-            "EmployeeUser": "1223456789",
-
-            "FullName": "Miguel Ramírez",
-
-            "IDCompany": "890903938-8",
-
-            "Matriz": "capa_soporte",
-
-            "MatrizDispo": "si"
-
-        },
-        {
-
-            "Active": true,
-
-            "Company": "BANCOLOMBIA S.A.",
-
-            "ContactName": "12345678910",
-
-            "Department": "BANCOLOMBIA S.A./IT",
-
-            "DeptName": "IT",
-
-            "Email": "bancolombia@bancolombia.com",
-
-            "EmployeeUser": "1234856789",
-
-            "FullName": "Natalia Ramírez",
-
-            "IDCompany": "890903938-8",
-
-            "Matriz": "capa_aplicacion",
-
-            "MatrizDispo": "si"
-
-        },
-        {
-
-            "Active": true,
-
-            "Company": "BANCOLOMBIA S.A.",
-
-            "ContactName": "12345678910",
-
-            "Department": "BANCOLOMBIA S.A./IT",
-
-            "DeptName": "IT",
-
-            "Email": "bancolombia@bancolombia.com",
-
-            "EmployeeUser": "123456789",
-
-            "FullName": "Alejandro Pérez",
-
-            "IDCompany": "890903938-8",
-
-            "Matriz": "capa_soporte",
-
-            "MatrizDispo": "si"
-
-        },
-        {
-
-            "Active": true,
-
-            "Company": "BANCOLOMBIA S.A.",
-
-            "ContactName": "12345678910",
-
-            "Department": "BANCOLOMBIA S.A./IT",
-
-            "DeptName": "IT",
-
-            "Email": "bancolombia@bancolombia.com",
-
-            "EmployeeUser": "123456789",
-
-            "FullName": "Sandra Pérez",
-
-            "IDCompany": "890903938-8",
-
-            "Matriz": "capa_red",
-
-            "MatrizDispo": "si"
-
-        },
-        {
-
-            "Active": true,
-
-            "Company": "BANCOLOMBIA S.A.",
-
-            "ContactName": "12345678910",
-
-            "Department": "BANCOLOMBIA S.A./IT",
-
-            "DeptName": "IT",
-
-            "Email": "bancolombia@bancolombia.com",
-
-            "EmployeeUser": "123456789",
-
-            "FullName": "Paula Torres",
-
-            "IDCompany": "890903938-8",
-
-            "Matriz": "capa_red",
-
-            "MatrizDispo": "si"
-
-        },
-        {
-
-            "Active": true,
-
-            "Company": "BANCOLOMBIA S.A.",
-
-            "ContactName": "12345678910",
-
-            "Department": "BANCOLOMBIA S.A./IT",
-
-            "DeptName": "IT",
-
-            "Email": "bancolombia@bancolombia.com",
-
-            "EmployeeUser": "123456789",
-
-            "FullName": "Felipe Sánchez",
-
-            "IDCompany": "890903938-8",
-
-            "Matriz": "capa_soporte",
-
-            "MatrizDispo": "si"
-
-        },
-        {
-
-            "Active": true,
-
-            "Company": "BANCOLOMBIA S.A.",
-
-            "ContactName": "12345678910",
-
-            "Department": "BANCOLOMBIA S.A./IT",
-
-            "DeptName": "IT",
-
-            "Email": "bancolombia@bancolombia.com",
-
-            "EmployeeUser": "123456789",
-
-            "FullName": "Javier Torres",
-
-            "IDCompany": "890903938-8",
-
-            "Matriz": "capa_soporte",
-
-            "MatrizDispo": "si"
-
-        },
-        {
-
-            "Active": true,
-
-            "Company": "BANCOLOMBIA S.A.",
-
-            "ContactName": "12345678910",
-
-            "Department": "BANCOLOMBIA S.A./IT",
-
-            "DeptName": "IT",
-
-            "Email": "bancolombia@bancolombia.com",
-
-            "EmployeeUser": "123456789",
-
-            "FullName": "Camila Sánchez",
-
-            "IDCompany": "890903938-8",
-
-            "Matriz": "capa_red",
-
-            "MatrizDispo": "si"
-
-        },
-        {
-
-            "Active": true,
-
-            "Company": "BANCOLOMBIA S.A.",
-
-            "ContactName": "12345678910",
-
-            "Department": "BANCOLOMBIA S.A./IT",
-
-            "DeptName": "IT",
-
-            "Email": "bancolombia@bancolombia.com",
-
-            "EmployeeUser": "123456789",
-
-            "FullName": "Diego Hernández",
-
-            "IDCompany": "890903938-8",
-
-            "Matriz": "capa_aplicacion",
-
-            "MatrizDispo": "si"
-
-        },
-        {
-
-            "Active": true,
-
-            "Company": "BANCOLOMBIA S.A.",
-
-            "ContactName": "12345678910",
-
-            "Department": "BANCOLOMBIA S.A./IT",
-
-            "DeptName": "IT",
-
-            "Email": "bancolombia@bancolombia.com",
-
-            "EmployeeUser": "123456789",
-
-            "FullName": "Valentina Hernández",
-
-            "IDCompany": "890903938-8",
-
-            "Matriz": "capa_aplicacion",
-
-            "MatrizDispo": "si"
+            }
 
         }
+
     ]
-        
-    
 
-
-    
 }
