@@ -3,7 +3,10 @@ const contenedorTiposMatriz = document.querySelector('#contenedor_tipos-matriz')
 const contenedorMatriz = document.querySelector('#contenedor_matriz');
 const ulListaTiposDeMatrices = document.querySelector('#lista_tipos-matrices');
 const tiposMatrices = [];
-const url = 'datosClientes.json';
+
+//const url = 'http://smapp.triara.co:13090/SM/9/rest/contacts?query=Company="CLARO COLOMBIA"&view=expand';
+//const url = 'datosClientes.json';
+const url = 'http://smapp.triara.co:13090/SM/9/rest/contacts?query=Company="CLARO COLOMBIA"';
 let textos = [];
 
 
@@ -11,6 +14,24 @@ let textos = [];
 let cliente = true;
 let operadorClaro = false;
 let admin = true;
+
+
+const username = 'Autosm';
+const password = 'Pxd7thd0*87';
+// Codifica el usuario y la contraseña en Base64
+const encodedCredentials = btoa(`${username}:${password}`);
+
+// Configura las opciones de la solicitud HTTP
+const requestOptions = {
+  method: 'GET', 
+  headers: {
+    'Authorization': `Basic ${encodedCredentials}`
+  }
+};
+
+
+console.log(encodedCredentials);
+console.log(url);
 
 
 
@@ -28,21 +49,30 @@ document.addEventListener('DOMContentLoaded',()=>{
 })
 
 
-                
+       
 
-                
+
+
+              
 function funcionAdmin(){
   console.log('ingreso como administrador');
   const sectionContactos = document.createElement('section');
   sectionContactos.id = 'section-contactos';
   document.body.appendChild(sectionContactos);
   let datosJson;
-//basic autentications
-  fetch(url)
+
+  fetch(url, requestOptions)
     .then(res => res.json())
+    
+    
     .then((salida) => {
+      
       datosJson = salida;
       
+      console.log(datosJson);
+
+
+
       const contactos = datosJson.content;//crea un array con todos los contactos
       console.log(contactos);
       //creamos un aside donde va un boton que lista todos los contactos y la lista de contactos
@@ -155,6 +185,9 @@ function funcionAdmin(){
                                 </select>
                                  </div>
                                 ;*/
+
+
+
     
                   // Asigna el contenido al div del contacto seleccionado
                   divContactoSeleccionado.classList.add('divcontacto');
@@ -321,6 +354,7 @@ function llenarContenedorTiposMatriz(arr){
         contador++;
         })  
 }
+
 
 /*
 // Obtén el nuevo valor de "Matriz" del input
